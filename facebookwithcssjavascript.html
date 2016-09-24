@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	
+	#headerleft{
+           background-color:#3b5998;
+			height:70px;
+			width:650px;
+			float:left;
+
+
+
+	
+	}
+	#headerright{
+           background-color:#3b5998;
+			height:70px;
+			width:677px;
+			float:left;
+			color: white;
+			text-align:left;
+           
+	
+	}
+
+#leftmenu{
+	 float: left;
+   background-color:#dfe3ee;
+   height:450px;
+   width: 680px;
+		color:#003366;
+		border:0;
+		font-size:21px;
+		font-weight: bolder;
+		text-align:center;
+
+}
+
+
+#rightmenu{
+	float:left;
+   background-color:#dfe3ee;
+   height:450px;
+   width:648px;
+   }
+
+
+#signup{
+			font-size:30px;
+		}
+
+
+#input1{
+	width: 150px;
+	height: 25px;
+	font-size:17px;
+	border-radius:2px;
+
+	}
+#input2{
+	width: 312px;
+	height: 25px;
+	font-size: 17px;
+	border-radius: 5px;
+
+	}
+#button{
+	background-color:green;
+	color: white;
+	display:inline-block;
+	font-weight: bold;
+	border: none;
+	font-size:16px;
+	padding: 10px 30px;
+	border-radius: 8px;
+	}
+
+#f1{
+  color: black;
+  font-size:12px;
+
+}
+a{
+text-decoration:none;
+}
+
+
+
+</style>
+<script>
+	function facebook(){
+   var email=document.login.email.value;
+   var password=document.login.pwd.value;
+   
+
+	if(email==""||email.indexOf('@')==-1){
+		alert("Please Enter Valid Email Or Proper Email Address");
+		return false;
+	}
+	if(password==""||password.length<10){
+		alert("Please Enter proper password wth min 10 character");
+		return false;
+	}
+}
+ function fsignup(){
+
+
+ 	var firstname=document.signup.fname.value;
+   var lastname=document.signup.lname.value;
+   var email1=document.signup.email1.value;
+   var password1=document.signup.pswd.value;
+   var mobile=document.signup.mobileno.value;
+    if(firstname==""){
+    	alert("Please Enter First Name");
+    	return false;
+
+    }
+    if(lastname==""){
+    	alert("Please Enter Last Name");
+    	return false;
+    	
+    }
+    if(email1==""||email1.indexOf('@')==-1){
+		alert("Please Enter Valid email1 Address");
+		return false;
+	}
+   if(password1==""||password1.length<10){
+   	alert("Give Proper Password Min 10 character");
+   	return false;
+   }
+   if(mobile==""){
+   	alert("Please Enter Valid or Proper Mobile number");
+   	return false;
+   }
+}
+
+
+
+
+</script>
+</head>
+<body>
+<form name="login">
+	<div id="headerleft"><center>
+			<img src="logo.jpg" width="150" height="50"></center>
+	</div>
+	<div id="headerright">
+<table>
+	<tr>
+		<td>Email or Phone</td>
+ 		<td>Password</td>
+ 		
+ 	</tr>
+ 	<tr>
+ 		<td><input type="email" name="email"></td>
+		<td><input type="password" name="pwd"></input></td>
+		<td><button style="background-color:lightblue" onClick="facebook()">Log In</button></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox">Keep me logged in</input></td>
+		<td>forget your password?</td>
+	</tr>
+	</table>	
+		</div>
+		</form>
+
+<form name="signup">
+			<div id="leftmenu"><br><br><br>
+         						Facebook helps to connect and share with<br> the people in your life<br>
+		 						<img src="fhome.png" width="400" height="160">
+		 	</div>
+			
+			<div id="rightmenu">
+			<Br>
+						<h1 id="signup">Sign Up</h1><Br>
+						<input id="input1" type="text" name="fname" placeholder="First Name" autocomplete="on" autofocus="on">
+						<input id="input1" type="text" name="lname" placeholder="Last Name" autofocus="on" autocomplete="on"><br><br>
+						<input id="input2" type="email" name="email1" placeholder="Email Address" autocomplete="on" autofocus="on"><br><br>
+						<input id="input2" type="password" name="pswd" placeholder="Password" autocomplete="on" autofocus="on"><br><br>
+						<input id="input2" type="text" name="mobileno" placeholder="Phone" autocomplete="on" autofocus="on" maxlength="10"></input><br>	<br>
+						<button id="button" onClick="fsignup()">Sign Up</button>
+						<hr>
+			</div>
+			<div>
+				<table  align="center" cellspacing="15" style="color: blue">
+				
+				<tr>
+				<td><a href="#"> Sign Up</td>
+				<td><a href="#">Log In</td>
+				<td><a href="#">Messanger</td>
+				<td><a href="#">Facebook Lite</td>
+				<td><a href="#">Mobile</td>
+				<td><a href="#">Find Friends</td>
+				<td><a href="#">Badges</td>
+				<td><a href="#">People</td>
+				<td><a href="#">pages</td>
+				<td><a href="#">Places</td>
+				<td><a href="#">Games</td>
+			</tr>
+			<tr>
+				<td><a href="#">Locations</td>
+				<td><a href="#">Celebrities</td>
+				<td><a href="#">Groups</td>
+				<td><a href="#">Moments</td>
+				<td><a href="#">About</td>
+				<td><a href="#">Create Advert</td>
+				<td><a href="#">Create Page</td>
+				<td><a href="#">Develpoers</td>
+				<td><a href="#">Careers</td>
+				<td><a href="#">Privacy</td>
+				<td><a href="#">Cookies</td>
+			</tr>
+ 				<td><a href="#">Adchoices</td>
+				<td><a href="#">Terms</td>
+				<td><a href="#">Help</td>
+				</tr>
+				<tr>
+				<td>
+				<font id="f1"><a href="#">Facebook @2016</font></td>
+
+			</table>
+			
+			
+				
+
+
+			</div>
+</form>
+
+
+
+
+
+
+</body>
+</html>
